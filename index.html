@@ -6,24 +6,32 @@
     </head>
     <body>
         <div class="background-overlay">
-            <h1>Kalkulator inflacije</h1>
+            <h1>Inflation Calculator</h1>
 
             <div class="container">
                 <h3>
-                    Stopa inflacije:
+                    Current value: <input type="number" min="1" id="money" /> €
+                </h3>
+                <br />
+                <h3>
+                    Inflation rate:
                     <input type="number" min="0.1" id="inflationRate" /> %
                 </h3>
                 <br />
                 <h3>
-                    Izračunaj koliko će
-                    <input type="number" min="1" id="money" /> € da vrijedi za
-                    <input type="number" min="1" id="years" /> godina?
+                    Years from now:
+                    <input type="number" min="1" id="years" />
                 </h3>
 
-                <button onclick="inflationCalculator()">Izračunaj</button>
+                <button onclick="inflationCalculator()">Calculate</button>
                 <br />
                 <br />
-                <label></label>
+                <h3>
+                    Future value:
+                    <label for="result" id="result"></label>
+                    <!-- <input type="number" min="1"  /> -->
+                </h3>
+                <!-- <label></label> -->
             </div>
         </div>
 

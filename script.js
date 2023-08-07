@@ -14,9 +14,12 @@ function inflationCalculator() {
         worth += worth * (inflationRate / 100)
     }
 
-    let recenica = document.querySelector("label")
-    recenica.innerText = `Danasnjih ${money} eura vrijedi isto kao ${worth.toFixed(
-        2
-    )} eura za ${years} godina.`
-    console.log(recenica)
+    let result = document.querySelector("label")
+    result.innerText = `${worth.toFixed(2)} €`
+    console.log(result)
+    // let recenica = document.querySelector("label")
+    // recenica.innerText = `Danasnjih ${money} eura vrijedi isto kao ${worth.toFixed(
+    //     2
+    // )} eura prije ${years} godina.`
+    // console.log(recenica)
 }
