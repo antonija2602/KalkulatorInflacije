@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Kalkulator inflacije</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Inflation Calculator</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="style.css" />
     </head>
+
     <body>
         <div class="background-overlay">
             <h1>Inflation Calculator</h1>
 
             <div class="container">
                 <h3>
-                    Current value: <input type="number" min="1" id="money" /> €
+                    Current value:
+                    <input
+                        type="number"
+                        min="1"
+                        id="money" />
+                    €
                 </h3>
                 <br />
                 <h3>
                     Inflation rate:
-                    <input type="number" min="0.1" id="inflationRate" /> %
+                    <input
+                        type="number"
+                        min="0.1"
+                        id="inflationRate" />
+                    %
                 </h3>
                 <br />
                 <h3>
                     Years from now:
-                    <input type="number" min="1" id="years" />
+                    <input
+                        type="number"
+                        min="1"
+                        id="years" />
                 </h3>
 
                 <button onclick="inflationCalculator()">Calculate</button>
@@ -28,7 +48,9 @@
                 <br />
                 <h3>
                     Future value:
-                    <label for="result" id="result"></label>
+                    <label
+                        for="result"
+                        id="result"></label>
                     <!-- <input type="number" min="1"  /> -->
                 </h3>
                 <!-- <label></label> -->
