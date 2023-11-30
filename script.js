@@ -1,11 +1,11 @@
 function inflationCalculator() {
-    let inflationRate = document.querySelector("#inflationRate")
-    let money = document.querySelector("#money")
+    const inflationRate = document.getElementById("inflation-rate")
+    const money = document.getElementById("money")
 
     inflationRate = parseFloat(inflationRate.value)
     money = parseFloat(money.value)
 
-    let years = document.querySelector("#years").value
+    const years = document.getElementById("years").value
     years = parseFloat(years)
 
     let worth = money + money * (inflationRate / 100)
@@ -14,7 +14,7 @@ function inflationCalculator() {
         worth += worth * (inflationRate / 100)
     }
 
-    let result = document.querySelector("label")
+    const result = document.getElementById("result")
     result.innerText = `${worth.toFixed(2)} €`
     console.log(result)
     // let recenica = document.querySelector("label")
