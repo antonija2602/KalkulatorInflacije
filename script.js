@@ -17,9 +17,7 @@ function inflationCalculator() {
     const result = document.getElementById("result")
     result.innerText = `${worth.toFixed(2)} €`
     console.log(result)
-    // let recenica = document.querySelector("label")
-    // recenica.innerText = `Danasnjih ${money} eura vrijedi isto kao ${worth.toFixed(
-    //     2
-    // )} eura prije ${years} godina.`
+    let recenica = document.querySelector("label")
+    recenica.innerText = `Danasnjih ${money} eura vrijedi isto kao ${worth.toFixed(2)} eura prije ${years} godina.`
     // console.log(recenica)
 }
